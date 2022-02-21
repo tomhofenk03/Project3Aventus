@@ -107,6 +107,39 @@
     width: 100%;
 }
 
+/***************************/
+/* EDIT PAGE: PERSOONLIJKE INFO SECTION */
+/***************************/
+.persoonlijke-info{
+    background-color: #d78c8c;
+}
+
+.section-description{
+    margin-bottom: 9.6rem;
+    font-size: 2.4rem;
+}
+
+.persoonlijke-info-form{
+    display:grid;
+    align-items:center;
+    
+    gap: 1.2rem;
+
+    margin-bottom: 9.6rem;
+
+    
+}
+
+form input{
+    border-radius: 3px;
+    padding: 1.2rem;
+    border: none;
+}
+
+input.frijbewijs{
+height:3.2rem;
+width:3.2rem;
+}
 
 
 
