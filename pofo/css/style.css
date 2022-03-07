@@ -148,7 +148,7 @@ width:3.2rem;
 .logintextje {
     display:grid;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .login-form {
@@ -160,7 +160,7 @@ width:3.2rem;
 h3 {
     text-align: center;
     text-transform: uppercase;
-    padding-top: 100px;
+    padding-top: 150px;
 
 }
 
@@ -179,5 +179,5 @@ main {
 }
 
 .boxding {
-    margin-bottom: 10px;
+    padding: 8px;
 }
