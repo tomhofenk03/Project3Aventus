@@ -141,5 +141,11 @@ height:3.2rem;
 width:3.2rem;
 }
 
+/***************************/
+/* INLOG PAGE CSS */
+/***************************/
 
-
+.loginbox {
+    text-align: center;
+}
+    
