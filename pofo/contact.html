@@ -30,10 +30,27 @@
         text-align: center;
         color: #ef9b9b
     }
+    h3 {
+        color: #00008B;
+        font-size: 50px; 
+    }
+    h4 {
+        color: #00008B;
+        font-size: 15px;
+        text-align: left;
+    }
 </style>    
 </head>
 <body>
-
+<style>
+    body {
+    background-color: #ef9b9b;
+}
+    label {
+        color:#00008B;
+        font-size: 15px;
+    }
+</style>
     <header class="header ">
         <a href="#"> 
             <img class="logo" alt="POFO logo" src="img/pofologo.png"/>
@@ -52,11 +69,24 @@
             <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </button>
     </header>
-
     <div> <h1>Wil je iets vragen?</h1>
         <h2>We proberen dezelfde dag anders binnen 24 uur te reageren</h2></div>
     <main> 
-   
+   <h3>Vragen ?</h3>
+   <br>
+    </br>
+   <h4>Vragen? opmerkingen? Is er iets niet goed gegaan of kom je er niet uit?<br>Laat het ons weten en wij helpen je zsm verder. We proberen je altijd direct te reageren</br></h4>
+   <br>
+   </br>
+   <form action="/action_page.php">
+    <label for="name">Naam:</label><br>
+    <input type="text" id="name" name="fname"><br>
+    <label for="Email">Email:</label><br>
+    <input type="text" id="Email" name="lname"><br>
+    <label for="Vragen">Vragen:</label><br>
+    <input type="text" id="Vragen" name="Vragen"><br></br>
+    <input type="Submit" value="Verzenden">
+  </form> 
     </main>
     
     <!-- Makes it able to use icons from ionicons.com -->
