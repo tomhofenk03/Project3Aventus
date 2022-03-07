@@ -11,37 +11,38 @@
 
     $servername = "localhost";
     $username = "root";
+    $dbname = "myDB";
 
     // Create connection
-    $conn = new mysqli($servername, $username);
+    $conn = new mysqli($servername, $username, "", $dbname);
+
+    if (!$conn){
+        $sql = "CREATE DATABASE myDB";
+        if ($conn->query($sql) === TRUE) {
+            echo "Database created successfully\n";
+        } else {
+            echo "Error creating database: " . $conn->error;
+        }
+    }
+
 
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    echo "Connected successfully";
+    echo "Connected successfully\n";
 
-    $sql = "CREATE DATABASE myDB";
-    if ($conn->query($sql) === TRUE) {
-        echo "Database created successfully";
+    $sql = "INSERT INTO MyGuests (firstname, lastname, email)
+    VALUES ('John', 'Doe', 'john@example.com')";
+
+    if (mysqli_query($conn, $sql)) {
+        $last_id = mysqli_insert_id($conn);
+        echo "New record created successfully. Last inserted ID is: " . $last_id;
     } else {
-        echo "Error creating database: " . $conn->error;
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 
-    $sql = "CREATE TABLE MyGuests (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        firstname VARCHAR(30) NOT NULL,
-        lastname VARCHAR(30) NOT NULL,
-        email VARCHAR(50),
-        reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-        )";
-        
-    if ($conn->query($sql) === TRUE) {
-        echo "Table MyGuests created successfully";
-    } else {
-        echo "Error creating table: " . $conn->error;
-    }
-        
+    $conn->close();
 
     ?>
 </body>
