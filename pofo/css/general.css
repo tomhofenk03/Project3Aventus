@@ -19,7 +19,7 @@ Bold: 700
 #2a2a2a
 #ef9b9b
 -Tints:
-#fae1e1
+fae1e1#
 -Shades:
 #d78c8c
 -Accents:
@@ -83,10 +83,10 @@ body{
 }
 
 
-.grid:not(:last-child) {
+/* .grid:not(:last-child) {
     margin-bottom: 9.6rem;
 
-}
+} */
 
 .grid--2-cols{
     grid-template-columns: repeat(2, 1fr);
@@ -125,7 +125,8 @@ body{
 .heading-secondary{
     font-size: 4.4rem;
     line-height: 1.2;
-    margin-bottom: 9.6rem;
+    margin-bottom: 3.2rem;
+    margin-top:3.2rem;
 }
 
 .heading-tertiary{
@@ -175,6 +176,8 @@ body{
 }
 
 
+/* Next page button */
+
 .link:link,
 .link:visited{
     display: inline-block;
@@ -191,6 +194,13 @@ transition: all 0.3s;
     color:#ef9b9b
     ;
     border-bottom: 1px solid transparant;
+}
+
+
+
+/* HELPER CLASS */
+.center-text{
+    text-align: center;
 }
 
 

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Pofo &mdash; Easily create your portfolio </title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/general.css" type="text/css">
+    <link rel="stylesheet" href="../css/queries.css" type="text/css">
+</head>
+<body>
+
+    <header class="header ">
+        <a href="../index.html"> 
+            <img class="logo" alt="POFO logo" src="../img/pofologo.png"/>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="#">How does POFO work</a></li>
+                <li><a class="main-nav-link" href="../edit_pages/edit-personal.html">Edit portfolio</a></li>
+                <li><a class="main-nav-link" href="#">Download portfolio</a></li>
+                <li><a class="main-nav-link nav-cta" href="#">Inloggen</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </header>
+
+    <main> 
+        
+        <section class="persoonlijke-info">
+            <div class="container center-text">
+
+                <h2 class="heading-secondary"> Persoonlijke informatie</h2>
+                <p class="section-description"> Vertel ons hier jouw persoonlijke informatie en hoe je dit weergegeven wil hebben op je portfolio! </p>
+            </div>
+            
+            <div class="container">
+                <div class="editpage">
+
+                    <div class="grid grid--2-cols">
+                        <form class="persoonlijke-info-form">
+                            <p class="persoonlijke-info-title">De informatie</p>
+                                <input type="text" class="fname" name="Naam" placeholder="Naam"> 
+                                <input type="text" class="fwoonplaats" name="Woonplaats" placeholder="Woonplaats"> 
+                                <input type="text" class="fgeboortedatum" name="Geboortedatum" placeholder="Geboortedatum"> 
+                                <input type="text" class="fnationaliteit" name="Nationaliteit" placeholder="Nationaliteit"> 
+                                <div class="frijbewijs-box"> <input type="checkbox" class="frijbewijs" name="rijbewijs" value="rijbewijs-behaald">  <p class="frijbewijs-text ">Rijbewijs</p>  </div>
+                        </form>
+                    
+                    <div>
+                        <p class="persoonlijke-info-title "> De vormgeving</p>
+                        
+                        <div class="grid">
+
+                            <div>
+                                <p>Lettertype</p> 
+                                <select id="lettertype" name="lettertype">
+                                    <option value="Sans serif">Sans Serif</option>
+                                    <option value="comic sans">Comic Sans</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <p>Kleur</p>
+                                <div class="vormgeving-colors">
+                                    <div class="vormgeving-color-box red"> </div>
+                                    <div class="vormgeving-color-box blue"> </div>
+                                    <div class="vormgeving-color-box darkgreen"> </div>
+                                </div>
+                            </div>
+                            
+                            <p>Grootte</p>
+                            <!-- Klein medium groot -->
+                            <p>Opmaak</p>
+                            <!-- Ronde vorm, rechte vorm  -->
+                            <p>Plaatsing                         
+                            </p>
+                            <!-- Recht links midden -->
+
+
+                            
+</div>
+</div>                    
+
+</div>
+<p class="edit-pagenumber center-text">1</p>
+                 
+                </div>
+                
+                <div class="btn-box grid grid--2-cols">
+                    <a  href="#"> <button class="btn btn-previouspage"> Terug </button></a>
+
+                    <a  class="btn-position-end" class="link-to-next-page" href="edit-adress.html"> <button class="btn btn-nextpage"> Doorgaan </button></a>
+                </div>
+            </div>
+                
+            </div>
+        </section>
+       
+        <footer class="center-text">
+            <p>&copy; 2022 POFO</p>
+    </footer>
+    
+
+
+
+    </main>
+    
+    <!-- Makes it able to use icons from ionicons.com -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+<script defer src="../script.js"></script>
+</body>
+</html>
