@@ -18,15 +18,15 @@
 <body>
 
     <header class="header ">
-        <a href="#"> 
-            <img class="logo" alt="POFO logo" src="img/pofologo.png"/>
+        <a href="../pofo/index.html"> 
+            <img class="logo" alt="POFO logo"  src="img/pofologo.png"/>
         </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">How does POFO work</a></li>
-                <li><a class="main-nav-link" href="#">Edit portfolio</a></li>
-                <li><a class="main-nav-link" href="#">Download portfolio</a></li>
-                <li><a class="main-nav-link nav-cta" href="#">Inloggen</a></li>
+                <li><a class="main-nav-link" href="../pofo/">How does POFO work</a></li>
+                <li><a class="main-nav-link" href="../pofo/edit_pages/edit-personal.html">Edit portfolio</a></li>
+                <li><a class="main-nav-link" href="../pofo/contact.html">Contact</a></li>
+                <li><a class="main-nav-link nav-cta" href="../pofo/inlog.html">Inloggen</a></li>
             </ul>
         </nav>
 
@@ -37,29 +37,36 @@
     </header>
 
     <main>
+    
+    <section class="section-login grid">
+        <div class="container">
 
-    
-    <!-- MAAK HIER JE PAGINA :) -->
-    
-    
-    <h3>Login Here</h3>
-    <form class="login-form"action="" method="post">
-        <table>
-            <tr class="boxding">
-                <td class="fontforusername">Username:</td>
-                <td><input type="text" name="user" placeholder="Enter name Here"></td>
-            </tr>
-              <tr class="boxding">
-                  <td class="fontforusername">Password:</td>
-                  <td><input type="password" name="user_pass" placeholder="Enter Password Here"></td>
-                </tr>
+
+            
+            <form class="login-form" action="" method="post">
+                <h1 class="heading-primary" >Inloggen</h1>
                 
-                <tr class="boxding">
-                    <td><input type="submit" name="submit" value="Login"></td>
-                    <td><p>Not yet a Member? <a href="register.php">Register</a></p></td>
-                </tr>
-            </table>
-        </form>
+                    <div class="login-form-box grid grid--2-cols">
+                        <p class="login-form-titles">Gebruikersnaam:</p>
+                        <input type="text" name="user" placeholder="Enter name Here" required>
+                    </div>
+
+                    <div class="login-form-box grid grid--2-cols">
+                        <p class="login-form-titles">Wachtwoord:</p>
+                        <input type="password" name="user_pass" placeholder="Enter Password Here" required>
+                    </div>
+                    
+                    <input type="submit" name="submit" value="Login" class="btn btn--full2">
+
+                    <p class="login-form-sidenote">Nog geen account? <a href="register.php">Registreer</a></p>
+                    
+            </form>
+        </div>
+    </section>
+
+    <footer class="center-text">
+        <p>&copy; 2022 POFO</p>
+    </footer>
         
     </main>
 
