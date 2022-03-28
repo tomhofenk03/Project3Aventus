@@ -137,7 +137,7 @@ body{
 
 .subheading{
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: #ef9b9b
     ;
@@ -175,6 +175,17 @@ body{
     background-color: #d78c8c;
 }
 
+
+.btn--full2:link, .btn--full2:visited {
+    background-color: #333 ; 
+    color:#ef9b9b;
+    cursor: pointer;
+}
+
+.btn--full2:hover, .btn--full2:active{
+    background-color: #333;
+    color: #fff;
+}
 
 /* Next page button */
 
