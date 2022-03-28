@@ -22,10 +22,15 @@ include "../includes/header.php";
                         <p class="login-form-titles">Wachtwoord:</p>
                         <input type="password" name="user_pass" placeholder="Enter Password Here" required>
                     </div>
-                    
-                    <input type="submit" name="submit" value="Login" class="btn btn--full2">
 
-                    <p class="login-form-sidenote">Nog geen account? <a href="registratie.php">Registreer</a></p>
+                    <div class="login-form-box grid grid--2-cols">
+                        <p class="login-form-titles">Bevestig wachtwoord:</p>
+                        <input type="password" name="user_pass_confirm" placeholder="Enter Password Here" required>
+                    </div>
+                    
+                    <input type="submit" name="submit" value="Registreer" class="btn btn--full2">
+
+                    <p class="login-form-sidenote">Heb je al een account? <a href="inlog.php">Log in</a></p>
                     
             </form>
         </div>
