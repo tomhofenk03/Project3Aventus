@@ -26,7 +26,7 @@
                 <li><a class="main-nav-link" href="../pages/index.php">Hoe werkt POFO</a></li>
                 <li><a class="main-nav-link" href="../pages/edit-personal.php">Edit portfolio</a></li>
                 <li><a class="main-nav-link" href="../pages/contact.php">Contact</a></li>
-                <li><a class="main-nav-link nav-cta" href="#section-howitworks">Inloggen</a></li>
+                <li><a class="main-nav-link nav-cta" href="../pages/inlog.php">Inloggen</a></li>
             </ul>
         </nav>
 
