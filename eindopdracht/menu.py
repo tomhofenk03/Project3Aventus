@@ -82,7 +82,7 @@ label1_galgje=Label(frame_galgje,text="--- Galgje ---",bg="#47162a", fg="#fa0066
 label1_galgje.grid(row=0,column=4, columnspan=6)
 
 
-image_list=['h9.png', 'h8.png', 'h7.png', 'h6.png','h5.png','h4.png','h3.png', 'h2.png', 'h1.png']
+image_list=['eindopdracht/h9.png', 'eindopdracht/h8.png', 'eindopdracht/h7.png', 'eindopdracht/h6.png','eindopdracht/h5.png','eindopdracht/h4.png','eindopdracht/h3.png', 'eindopdracht/h2.png', 'eindopdracht/h1.png']
 img = Image.open(image_list[kansen])
 img = img.resize((400, 400), Image.Resampling.LANCZOS) #make all images the same size
 img= ImageTk.PhotoImage(img)
