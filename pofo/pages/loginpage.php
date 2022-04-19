@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
  
 // Include config file
 require_once "../includes/config.php";
@@ -78,7 +80,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_close($stmt);
         }
     }
-    
     // Close connection
     mysqli_close($link);
 }
@@ -104,9 +105,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 
     <header class="header ">
-        <a href="../pages/index.php"> 
+        
             <img class="logo" alt="POFO logo"  src="../img/pofologo.png"/>
-        </a>
         
 
         <button class="btn-mobile-nav">

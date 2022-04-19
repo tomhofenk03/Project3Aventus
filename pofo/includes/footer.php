@@ -8,6 +8,6 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     
-<script defer src="script.js"></script>
+<script defer src="../script.js"></script>
 </body>
 </html>

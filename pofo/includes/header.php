@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,12 +26,10 @@
         </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="../pages/index.php">Hoe werkt POFO</a></li>
+                <li><a class="main-nav-link" href="../pages/portfolio.php">Jouw gemaakte portfolio</a></li>
                 <li><a class="main-nav-link" href="../pages/edit-personal.php">Edit portfolio</a></li>
                 <li><a class="main-nav-link" href="../pages/contact.php">Contact</a></li>
-                <li><a class="main-nav-link nav-cta" href="../pages/loginpage.php">Uitloggen</a></li>
-              
-
+                <li><a class="main-nav-link nav-cta" href="../pages/logout.php">Uitloggen</a></li>
             </ul>
         </nav>
 

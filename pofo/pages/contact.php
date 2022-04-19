@@ -1,5 +1,5 @@
 <?php
-include "../includes/header.php";
+include_once "../includes/header.php";
 
 ?>
 
@@ -15,7 +15,7 @@ include "../includes/header.php";
             
             <div class="contact-description ">
                     <p class="contact-text center-text">Vragen? Opmerkingen? Is er iets niet goed gegaan of kom je er niet uit? Laat het ons weten en wij helpen je zsm verder. We proberen je altijd direct te reageren.</p>
-                    <img src="img/contact.jpg" alt="Social media icons on hand" class="contact-img">
+                    <img src="../img/contact.jpg" alt="Social media icons on hand" class="contact-img">
             </div>
 
             <form action="/action_page.php" method="" class="contact-form " >

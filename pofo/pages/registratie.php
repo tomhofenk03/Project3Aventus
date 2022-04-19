@@ -83,7 +83,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
 
-                header("location: index.php");
+                header("location: ../pages/loginpage.php");
 
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -120,9 +120,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 
     <header class="header ">
-        <a href="../pages/index.php"> 
             <img class="logo" alt="POFO logo"  src="../img/pofologo.png"/>
-        </a>
 
         <button class="btn-mobile-nav">
             <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>

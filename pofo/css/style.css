@@ -116,15 +116,21 @@
   color: #8f5d5d;
   height: 4.8rem;
   width: 4.8rem;
+  z-index: 1;
 }
 
 .hero-img {
   width: 100%;
+  border-radius:3px;
 }
 
+/***************************/
+/* INDEX PAGE */
+/***************************/
+
+/* Voorbeeld porfolio's sectie */
 .section-templates {
   background-color: #fff;
-  margin-bottom: 9.6rem;
 }
 
 .template-box {
@@ -139,6 +145,7 @@
   height: 100%;
   transition: all 0.7s ease-in-out;
   border-radius: 3px;
+  border-radius: 3px;
 }
 
 .template-img:hover {
@@ -146,13 +153,34 @@
   cursor: pointer;
 }
 
+/* Hoe werkt POFO sectie */
+.section-howitworks{
+background-color: #fdf5f5;
+}
+
+.howitworks-img{
+  align-self: center;
+  justify-self: center;
+  border-radius: 3px;
+}
+
+.howitworks-text {
+  font-size: 2.2rem;
+  align-self: center;
+}
+
+.howitworks-text a{
+  text-decoration: none;
+}
+
+
+
 /***************************/
 /* EDIT PAGE: PERSOONLIJKE INFO SECTION */
 /***************************/
 .persoonlijke-info {
   background-color: #f7e8e8;
   padding-top: 1.2rem;
-  height: 100vh;
 }
 
 .section-description {
@@ -229,9 +257,39 @@ input.frijbewijs {
 }
 
 /* VORMGEVING PART */
+.vormgeving-box{
+  display: grid;
+  align-items: center;
+  justify-content:start;
+  /* row-gap: 1.8rem; */
+  font-size: 1.4rem;
+}
+.vormgeving-options-box{ 
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 5fr 1fr  5fr 1fr 5fr ;
+  column-gap: 0.5rem;
+
+}
+.vormgeving-box-title{
+  margin: 1.8rem 0.5rem 0.5rem 0 ;
+  font-size:1.6rem;
+  font-weight:400;
+  text-decoration: underline;
+}
+
+input.vormgeving-checkbox{
+  border: none;
+  font-size: 2.4rem;
+  margin-right: 0.5rem;
+  height:1.8rem;
+  width:1.8rem;
+
+}
 .vormgeving-colors {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.2rem;
 }
 
 .vormgeving-color-box {
@@ -240,8 +298,16 @@ input.frijbewijs {
   border-radius: 3px;
 }
 
-.red {
-  background-color: #5f1616;
+.btn-opslaan{
+  font-size: 1.6rem !important;
+  font-weight: 400 !important;
+  padding: 1rem !important;;
+  width: 150px;
+  justify-self: end;
+}
+
+.pink {
+  background-color: #ff0060;
 }
 
 .darkgreen {
@@ -252,8 +318,56 @@ input.frijbewijs {
   background-color: rgb(25, 25, 105);
 }
 
+
+
 /***************************/
-/* INLOG PAGE CSS */
+/* PORTFOLIO PAGE  */
+/***************************/
+
+.portfolio-title{
+  font-size: 4.8rem;
+  color: white;
+  padding: 6.4rem; 
+  text-transform: uppercase;
+}
+.portfolio{
+  background-color:#ff0060;
+}
+
+.portfolio-box{
+  background-color: white;
+  padding:3.2rem;
+  display: grid;
+  gap: 1.4rem;
+  border-radius: 3px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+  align-content: center;
+}
+
+.portfolio-text{
+  font-size:1.8rem;
+}
+
+.portfolio-text strong{
+  color: #333;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+
+}
+
+.portfolio-icon{
+  color: white;
+  font-size: 3.2rem;
+  padding: 10px;
+  background-color:#ff0060;
+  border-radius:50px;
+  margin: 1.2rem;
+
+}
+
+/***************************/
+/* INLOG PAGE  */
 /***************************/
 .section-login {
   background-image: url(https://recruitment-blog.nl/wp-content/uploads/2014/04/168372833.jpg);
@@ -375,10 +489,14 @@ footer {
   height: 4.8rem;
   color: #d78c8c;
   padding: 2rem;
-  /* bottom:0; */
 }
 
 footer p {
   font-size: 1.2rem;
   font-style: italic;
+}
+
+#txtField{
+  display: grid;
+  gap: 1.2rem;
 }

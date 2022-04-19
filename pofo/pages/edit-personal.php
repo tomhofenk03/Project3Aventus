@@ -1,5 +1,7 @@
 <?php
-include "../includes/header.php";
+include_once "../includes/header.php";
+include "../includes/connect.php"; 
+
 
 ?>
 
@@ -16,43 +18,63 @@ include "../includes/header.php";
                 <div class="editpage">
 
                     <div class="grid grid--2-cols">
-                        <form class="persoonlijke-info-form">
+                        <form class="persoonlijke-info-form" action="../pages/edit-pesonal2.php" method="POST">
                             <p class="persoonlijke-info-title">De informatie</p>
-                                <input type="text" class="fname" name="Naam" placeholder="Naam"> 
-                                <input type="text" class="fwoonplaats" name="geboorteplaats" placeholder="geboorteplaats"> 
-                                <input type="text" class="fgeboortedatum" name="geboortedatum" placeholder="Geboortedatum"> 
-                                <input type="text" class="fnationaliteit" name="nationaliteit" placeholder="Nationaliteit"> 
-                                <div class="frijbewijs-box"> <input type="checkbox" class="frijbewijs" name="rijbewijs" value="rijbewijs-behaald">  <p class="frijbewijs-text ">Rijbewijs</p>  </div>
+                                <input type="text" class="fnaam" name="naam" placeholder="Naam" 
+                                value="<?php echo isset($_SESSION['naam']) ? $_SESSION['naam'] : "" ?>"> 
+                                <input type="text" class="fgeboorteplaats" name="geboorteplaats" placeholder="Geboorteplaats"
+                                value="<?php echo isset($_SESSION['geboorteplaats']) ? $_SESSION['geboorteplaats'] : "" ?>">  
+                                <input type="text" class="fgeboortedatum" name="geboortedatum" placeholder="2022-01-01"
+                                value="<?php echo isset($_SESSION['geboortedatum']) ? $_SESSION['geboortedatum'] : "" ?>"> 
+                                <input type="text" class="fnationaliteit" name="nationaliteit" placeholder="Nationaliteit"
+                                value="<?php echo isset($_SESSION['nationaliteit']) ? $_SESSION['nationaliteit'] : "" ?>">  
+                                <div class="frijbewijs-box"> <input type="checkbox" class="frijbewijs" name="rijbewijs" value="Behaald">
+                                <input type="hidden" name="rijbewijs" value="Niet behaald">  <p class="frijbewijs-text ">Rijbewijs</p>  </div>
+                                <input  type="submit" value="Opslaan" class="btn btn-opslaan">
                         </form>
                     
                     <div>
-                        <p class="persoonlijke-info-title "> De vormgeving</p>
+                        <p class="persoonlijke-info-title "> De vormgeving </p>
                         
-                        <div class="grid">
+                        <div class="vormgeving-box">
 
-                            <div>
-                                <p>Lettertype</p> 
+                            <p class="vormgeving-box-title" >Lettertype</p> 
+                            <div class="vormgeving-options-box">
                                 <select id="lettertype" name="lettertype">
                                     <option value="Sans serif">Sans Serif</option>
                                     <option value="comic sans">Comic Sans</option>
+                                    <option value="Century Gothic">Century Gothic</option>
+                                    <option value="Arial">Arial</option>
                                 </select>
                             </div>
                             
-                            <div>
-                                <p>Kleur</p>
+                                <p class="vormgeving-box-title" >Kleur</p>
                                 <div class="vormgeving-colors">
-                                    <div class="vormgeving-color-box red"> </div>
+                                    <div class="vormgeving-color-box pink"> </div>
                                     <div class="vormgeving-color-box blue"> </div>
                                     <div class="vormgeving-color-box darkgreen"> </div>
                                 </div>
-                            </div>
                             
-                            <p>Grootte</p>
+                            <p class="vormgeving-box-title">Grootte</p>
+                            <div class="vormgeving-options-box">
+                                <input type="checkbox" class="vormgeving-checkbox"  name="vormgeving"> 12px    
+                                <input type="checkbox" class="vormgeving-checkbox"  name="vormgeving">24px   
+                                <input type="checkbox" class="vormgeving-checkbox"  name="vormgeving"> 36px 
+                            </div>
                             <!-- Klein medium groot -->
-                            <p>Opmaak</p>
+                            <p class="vormgeving-box-title">Opmaak</p>
+                            <div class="vormgeving-options-box">
+                                <input type="checkbox" class="vormgeving-checkbox"  name="vormgeving">Ronde hoeken 
+                                <input type="checkbox" class="vormgeving-checkbox"  name="vormgeving">Rechte hoeken
+                            </div>
+
                             <!-- Ronde vorm, rechte vorm  -->
-                            <p>Plaatsing                         
-                            </p>
+                            <p class="vormgeving-box-title">Plaatsing </p>
+                              <div class="vormgeving-options-box">
+                                <input type="checkbox" class="vormgeving-checkbox"  name="vormgeving"> Rechts uitlijnen
+                                <input type="checkbox" class="vormgeving-checkbox"  name="vormgeving">Links uitlijnen
+                                <input type="checkbox" class="vormgeving-checkbox"  name="vormgeving">Centreren
+                            </div>
                             <!-- Recht links midden -->
 
 
@@ -66,9 +88,9 @@ include "../includes/header.php";
                 </div>
                 
                 <div class="btn-box grid grid--2-cols">
-                    <a  href="#"> <button class="btn btn-previouspage"> Terug </button></a>
+                    <a  href="../pages/index.php"> <button class="btn btn-previouspage"> Terug </button></a>
 
-                    <a  class="btn-position-end" class="link-to-next-page" href="edit-adress.html"> <button class="btn btn-nextpage"> Doorgaan </button></a>
+                    <a  class="btn-position-end" href="../pages/edit-adress.php"> <button class="btn btn-nextpage" > Doorgaan </button></a>
                 </div>
             </div>
                 
@@ -76,8 +98,7 @@ include "../includes/header.php";
         </section>
         </main>
        
-        <?php
+<?php
+include "../includes/footer.php";
 
-        include "../includes/footer.php";
-        
-        ?>
+?>
